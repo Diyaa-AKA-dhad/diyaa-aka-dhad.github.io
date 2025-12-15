@@ -4,6 +4,7 @@
     --color-secondary: #f4f4f4;      /* Near-White for text */
     --color-accent: #9a8c98;         /* Vibrant Purple Accent */
     --color-gray: #aaaaaa;
+    --color-soft-text: #c8d7d3;
     --font-main: 'Montserrat', sans-serif;
 }
 
@@ -14,10 +15,12 @@
 }
 
 body {
-    font-family: var(--font-main);
     background-color: var(--color-primary);
     color: var(--color-secondary);
+    font-family: var(--font-main);
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -383,6 +386,7 @@ footer {
 
 /* 1. Summary Block */
 .about-summary {
+    color: var(--color-soft-text);
     display: flex;
     gap: 40px;
     align-items: flex-start;
@@ -393,6 +397,7 @@ footer {
 }
 
 .summary-content h2 {
+    color: var(--color-secondary);
     font-size: 1.8em;
     margin-bottom: 20px;
 }
@@ -438,6 +443,7 @@ footer {
 }
 
 .timeline-item {
+    color: var(--color-soft-text);
     /* Increase left padding to push the text further from the line */
     border-left: 3px solid var(--color-gray);
     padding: 0 0 40px 40px; /* INCREASED LEFT PADDING from 30px to 40px */
@@ -487,6 +493,7 @@ footer {
 }
 
 .core-grid {
+    color: var(--color-soft-text);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
@@ -650,6 +657,8 @@ footer {
 }
 
 .philosophy-content p {
+    padding-top: 5px;
+    color: var(--color-soft-text);
     margin-bottom: 15px;
     line-height: 1.6;
 }
@@ -683,3 +692,16 @@ footer {
         flex-direction: column;
     }
 }
+
+/* Ensure these styles are in style.css for both philosophy sections */
+.philosophy-section,
+.learning-philosophy-section { /* Added .learning-philosophy-section here */
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #202020;
+    border-radius: 10px;
+    border: 1px solid #333;
+    margin-bottom: 40px; 
+}
+/* ... all other .philosophy-content and its sub-styles ... */
