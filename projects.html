@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Diyaa (dhad)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">DHAD</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="projects-page-main">
+        
+        <section class="page-hero">
+            <h1>Portfolio & Content</h1>
+            <p>From game development tutorials to full-stack applications.</p>
+        </section>
+
+        <section class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="youtube">YouTube Tutorials</button>
+            <button class="filter-btn" data-filter="game-dev">Game Dev</button>
+            <button class="filter-btn" data-filter="app-dev">App Development</button>
+        </section>
+
+        <section class="project-list">
+            
+            <article class="project-card video-card" data-category="youtube">
+                <div class="image-wrapper">
+                    <img src="https://img.youtube.com/vi/rivjIPi4S0A/maxresdefault.jpg" alt="Godot Programming">
+                    <a href="https://www.youtube.com/watch?v=rivjIPi4S0A" target="_blank" class="play-overlay"><i class="fas fa-play"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="tag youtube-tag">Godot Engine</span>
+                    <h3>Programming in Godot: Everything You Need to Know</h3>
+                    <p>A comprehensive guide covering the essentials of coding within the Godot Engine for beginners.</p>
+                </div>
+            </article>
+
+            <article class="project-card video-card" data-category="youtube">
+                <div class="image-wrapper">
+                    <img src="https://img.youtube.com/vi/mmB6aLCbnAI/maxresdefault.jpg" alt="Blender Animation">
+                    <a href="https://www.youtube.com/watch?v=mmB6aLCbnAI" target="_blank" class="play-overlay"><i class="fas fa-play"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="tag youtube-tag">Blender 3D</span>
+                    <h3>Master Blender Animation in 10 Minutes</h3>
+                    <p>A fast-paced tutorial explaining the animation tree, keyframes, and logic in Blender UPBGE.</p>
+                </div>
+            </article>
+
+            <article class="project-card video-card" data-category="youtube">
+                <div class="image-wrapper">
+                    <img src="https://img.youtube.com/vi/npBXiLKApRc/maxresdefault.jpg" alt="Python Tutorial">
+                    <a href="https://www.youtube.com/watch?v=npBXiLKApRc" target="_blank" class="play-overlay"><i class="fas fa-play"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="tag youtube-tag">Python</span>
+                    <h3>Python Basics in Record Time</h3>
+                    <p>Learn variables, loops, and functions in Python in under 10 minutes.</p>
+                </div>
+            </article>
+
+             <article class="project-card video-card" data-category="youtube">
+                <div class="image-wrapper">
+                    <img src="https://img.youtube.com/vi/I5JrLkTaZG8/maxresdefault.jpg" alt="Godot Functions">
+                    <a href="https://www.youtube.com/watch?v=I5JrLkTaZG8" target="_blank" class="play-overlay"><i class="fas fa-play"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="tag youtube-tag">Godot Engine</span>
+                    <h3>Why Functions are Critical in Godot</h3>
+                    <p>A deep dive into modular programming and using functions effectively in game dev.</p>
+                </div>
+            </article>
+            
+            <article class="project-card video-card" data-category="youtube">
+                <div class="image-wrapper">
+                    <img src="https://img.youtube.com/vi/T8KSjX11nBY/maxresdefault.jpg" alt="Blender Design">
+                    <a href="https://www.youtube.com/watch?v=T8KSjX11nBY" target="_blank" class="play-overlay"><i class="fas fa-play"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="tag youtube-tag">Blender 3D</span>
+                    <h3>Blender Animation Basics</h3>
+                    <p>Understanding the fundamental concepts of 3D animation and rigging.</p>
+                </div>
+            </article>
+
+            <article class="project-card video-card" data-category="youtube">
+                <div class="image-wrapper">
+                    <img src="https://img.youtube.com/vi/o00mvvnUcnU/maxresdefault.jpg" alt="Godot Animation">
+                    <a href="https://www.youtube.com/watch?v=o00mvvnUcnU" target="_blank" class="play-overlay"><i class="fas fa-play"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="tag youtube-tag">Godot Engine</span>
+                    <h3>Godot Programming & Logic</h3>
+                    <p>Advanced concepts and logic structure for building scalable games in Godot.</p>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="app-dev">
+                <div class="image-placeholder app-gradient">
+                    <i class="fas fa-sticky-note fa-3x"></i>
+                </div>
+                <div class="card-content">
+                    <span class="tag app-tag">Flutter App</span>
+                    <h3>Noty Flutter Project</h3>
+                    <p>A mobile note-taking application built with Flutter. Features local storage and custom UI themes.</p>
+                    <a href="https://github.com/Diyaa-AKA-dhad/Noty-Flutter-Project" class="project-link">View on GitHub &rarr;</a>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="app-dev">
+                <div class="image-placeholder app-gradient">
+                    <i class="fas fa-wallet fa-3x"></i>
+                </div>
+                <div class="card-content">
+                    <span class="tag app-tag">Flutter App</span>
+                    <h3>Duel Balance Tracker</h3>
+                    <p>A financial tracking application to manage expenses and balances, demonstrating state management in Flutter.</p>
+                    <a href="https://github.com/Diyaa-AKA-dhad/Deul-Balance-Tracker" class="project-link">View on GitHub &rarr;</a>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="game-dev">
+                <div style="text-align: center"><img src="pics/seas_captain.png"></div>
+                <div class="card-content">
+                    <span class="tag game-tag">Unity, C#</span>
+                    <h3>Seas Captain</h3>
+                    <p>Action-packed top-down shooter game created on Unity. A ship defending the castle from an invador army.</p>
+                    <a href="https://daz7.itch.io/sea-capain" class="project-link">Get it on Itch.io &rarr;</a>
+                </div>
+            </article>
+
+             <article class="project-card" data-category="game-dev">
+                <img src="pics/chicken_run.png">
+                <div class="card-content">
+                    <span class="tag game-tag">Godot, gdscript (python based)</span>
+                    <h3>Chicken Run</h3>
+                    <p>A flappy bird similar game created on Godot. A classical move from game developer to develop his own version of the famous classic.</p>
+                    <a href="https://daz7.itch.io/chicken-run" class="project-link">Get it on Itch.io &rarr;</a>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="game-dev">
+                <img src="pics/air_hockey.png">
+                <div class="card-content">
+                    <span class="tag game-tag">Unity, C#</span>
+                    <h3>Air Hockey</h3>
+                    <p>Same classic, less famous version of the lovely "sport" phone game to be my first full game on unity.</p>
+                    <a href="https://daz7.itch.io/air-hockey" class="project-link">Get it on Itch.io &rarr;</a>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Diyaa (dhad) | <a href="https://github.com/Diyaa-AKA-dhad">GitHub</a> | <a href="https://www.youtube.com/@dhad">YouTube</a></p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
